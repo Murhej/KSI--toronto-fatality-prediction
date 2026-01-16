@@ -1,9 +1,16 @@
-<<<<<<< HEAD
-# toronto-fatality-prediction
-=======
-# KSI--toronto-fatality-prediction
+# KSI – Toronto Fatality Prediction
 
+This project predicts the likelihood of fatal outcomes in Toronto traffic collisions using machine learning.
 
-here is the data set that is  neededfor the code 
-(https://drive.google.com/drive/u/2/folders/15qi1XtBrHXKPq-XHI4pyOAtaklE3uwTL)
->>>>>>> 9d92cdf260f40178ac45b23fe43b27e2b299f2f9
+## Project Structure
+- `Model/` – data processing and ML models  
+- `UI/` – frontend and backend application  
+- `README.md` – project documentation  
+
+## Dataset
+Due to GitHub file size limits, the dataset is **not included** in this repository.
+
+Download the dataset here:  
+https://drive.google.com/drive/u/2/folders/15qjXtBrHXKPq-XHl4pyOAtakE3uwTL
+
+After downloading, place the CSV file in:
