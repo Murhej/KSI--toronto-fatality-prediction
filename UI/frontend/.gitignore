@@ -4,12 +4,18 @@
 /node_modules
 /.pnp
 .pnp.js
+__pycache__/
+.env
+venv/
+.env.local
+*.pyc
 
 # testing
 /coverage
 
 # production
 /build
+Model/DataVisal/*.csv
 
 # misc
 .DS_Store

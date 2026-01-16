@@ -1,0 +1,17 @@
+[33mcommit 2ec54edab040f28bbf73748f20566ec2b09cefab[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Murhej <murhej.shiha@gmail.com>
+Date:   Fri Jan 16 14:00:22 2026 -0500
+
+    Ignore large dataset files
+
+[33mcommit 2b441314aa245dd0f1d6631596761e60d5f7adf9[m
+Author: Murhej <murhej.shiha@gmail.com>
+Date:   Fri Jan 16 13:41:17 2026 -0500
+
+    Add traffic collision dataset via Git LFS
+
+[33mcommit 4e52609c1b224f215525f155791d7679c8c60c4c[m
+Author: Murhej <murhej.shiha@gmail.com>
+Date:   Fri Jan 16 02:48:19 2026 -0500
+
+    fixed the runining porblem of model not working
