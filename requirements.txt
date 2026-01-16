@@ -4,6 +4,7 @@ pandas
 numpy
 joblib
 python-dotenv
+gunicorn
 
 scikit-learn==1.5.1
 imbalanced-learn==0.12.3
