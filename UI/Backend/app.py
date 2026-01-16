@@ -25,11 +25,21 @@ MODEL_PATH = PROJECT_ROOT / "Model" / "Best_traffic_model.joblib"
 # -------------------------
 # LOAD DATA + MODEL
 # -------------------------
-TFM = pd.read_csv(CSV_PATH)
-TFM.replace(["N/R", "NSA"], np.nan, inplace=True)
+# -------------------------
+# LOAD DATA (OPTIONAL) + MODEL
+# -------------------------
+TFM = None
+
+if CSV_PATH.exists():
+    print("CSV found, loading dataset...")
+    TFM = pd.read_csv(CSV_PATH)
+    TFM.replace(["N/R", "NSA"], np.nan, inplace=True)
+else:
+    print("CSV not found. Running in model-only mode.")
 
 config = joblib.load(MODEL_PATH, mmap_mode="r")
 model = config["model"]
+
 
 # -------------------------
 # HELPERS
@@ -44,6 +54,13 @@ TEMPLATE_DATA.update({"OCC_YEAR": 2025, "DIVISION": "D14", "season": "Summer"})
 # -------------------------
 # ROUTES
 # -------------------------
+@app.route("/health")
+def health():
+    return jsonify({
+        "status": "ok",
+        "csv_loaded": TFM is not None
+    })
+
 @app.route("/predict", methods=["POST"])
 def predict():
     try:
@@ -79,6 +96,7 @@ def predict():
 
         df = pd.DataFrame([input_data])[model.feature_names_in_]
         prob = model.predict_proba(df)[0, 1]
+
 
         return jsonify({
             "probability": float(prob),
