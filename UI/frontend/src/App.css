@@ -1,0 +1,284 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.App-header {
+  background-color: rgb(36, 103, 236);
+  height: 8vmin;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: calc(5px + 1vmin);
+}
+
+.App-header img {
+  margin-left: .5rem;
+  height: 6vmin;
+}
+.predict-form {
+  width: 94vw;
+  padding: 1rem 0; /* optional: some breathing room */
+  margin-bottom: 1rem;
+}
+
+.Form-body {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.button-container {
+  padding-right: 1rem;
+  display: flex;
+  width: 30vw;
+  gap: 1rem;
+  font-size: 120%;
+  justify-content: space-evenly;
+}
+
+.button-container a{
+  background-color: rgb(36, 103, 236);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  
+}
+
+.button-container a:hover {
+  border-bottom: 2px solid white;
+}
+
+.Tips-body {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f0f2f5;
+}
+
+.Tips-container {
+  width: 95%;
+  max-width: 1000px;
+}
+
+.Tips-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0047ab;
+}
+
+.Tips-card {
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.Tips-card:hover {
+  border-color: #0047ab;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.Tips-card h4 {
+  margin: 0;
+  color: #0047ab;
+  font-size: 1.2rem;
+}
+
+.Tips-card ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.Tips-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* BODY */
+.App-body {
+  flex: 1;
+  background-color: #d0d2d6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  color: #ffffff;
+}
+.App-body div{
+  margin-bottom: 1rem;
+  
+}
+.Welcome-Body  {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin: 0;
+  width: 95%;
+
+  color: #05183f;
+}
+.Welcome-Body h3 {
+  font-size: 150%;
+  color: rgb(7, 58, 224);
+    margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+.p-body{
+  font-size: 120%;
+  padding-left: 1rem;
+ 
+}
+.Location-Body{
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+
+  margin: 0;
+  width: 95%;
+  height: 100%;
+  color: #05183f;
+  
+  
+  
+}
+.Location-Body input{
+  width: 75%;
+  height: 2rem;
+  border-radius: 5px;
+  font-size: 120px;
+  padding-left: 3px;
+  
+
+}
+.Location-Body button{
+  
+  width: 130px;
+  height: 2.4rem;
+  border-radius: 5px;
+  background-color: black;
+  color: #f0f1f3;
+  margin-left: 1rem;
+
+}
+.Search-bar{
+  width: 100%;
+  padding-left: 1.1rem;
+  padding-top: 1rem;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.Map-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.iframe{
+  width: 95%;
+}
+
+.Selection-Body{
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin: 0;
+  width: 95%;
+  height: 100%;
+  color: #29303f;
+}
+.Selection-Body h3{
+    font-size: 150%;
+  color: rgb(7, 58, 224);
+    margin-top: 0;
+  margin-bottom: 0;
+}
+.App-body p{
+  font-size: 13px;
+}
+
+.role-options {
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  padding: 1rem;
+  margin-top: 1rem;
+
+}
+
+.role-card {
+  background-color: #f5f7fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  width: 20%;
+  height: 155px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.role-card:hover {
+  background-color: #0047ab;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.role-card i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.role-card span {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+
+/* FOOTER */
+.App-footer {
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  background-color: #f0f1f3;
+  color: rgb(8, 8, 8);
+  font-size: 100%;
+  padding: 0.5rem 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+

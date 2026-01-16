@@ -1,0 +1,129 @@
+.PCRT-body{
+    background-color: rgb(255, 255, 255);
+    width: 90vw;
+    height: 28rem;
+    border-radius: 10px;
+    padding: 1rem;
+    
+}
+
+.PCRT-Selection{
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    gap: 10px 30px;
+    margin-top: 1rem;
+    padding-left: 3rem;
+    font-size: 120%;
+    font-weight: bold;
+    
+}
+
+.PCRT-Selection select{
+    height: 4rem;
+    border-radius: 5px;
+    margin-left: 1rem;
+    margin-right:2rem;
+    font-size: 100%;
+    padding-left: 1rem;
+}
+
+.PCRT-body h1{
+    font-size: 30px;
+    padding-top: .5rem;
+    margin: 0;
+    padding-bottom: 0; 
+}
+.PCRT-body span{
+    padding-left: .5rem;
+    font-size: medium;
+    margin: 0;
+}
+.Logo-pcrt{
+    display: flex;
+    flex-direction: row;
+
+   }
+   .Logo-pcrt img{
+     width: 6rem;
+   }
+
+   
+
+.Predict-button{
+
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   .PCRT-body button{
+        width: 15rem;
+        height: 3rem;
+        font-size: 5px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(27, 27, 27);
+        color: white;
+
+   }
+
+   .criv-body{
+    color: rgb(84, 90, 143);
+    background-color: rgb(255, 255, 255);
+    width: 90vw;
+    height: auto; /* ✅ Change this */
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: .5rem;
+    
+   }
+   
+   .criv-button{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   }
+   .criv-button button{
+    width: 30%;
+    height: 4rem;
+    font-size: 120%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+   }
+
+   .Logo-criv{
+    display: flex;
+    flex-direction: row;
+
+   }
+   .Logo-criv img{
+
+    width: 7rem;
+    height: 8rem;
+  }
+  
+.criv-body h1{
+    font-size: 200%;
+    padding-top: 1rem;
+    margin: 0;
+    padding-bottom: 0; 
+}
+.criv-body span{
+    padding-left: .6rem;
+
+    font-size: 60%;
+    margin: 0;
+    padding-top: 0;
+
+}

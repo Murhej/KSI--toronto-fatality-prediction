@@ -1,1 +1,1 @@
-# KSI--toronto-fatality-prediction
+# toronto-fatality-prediction

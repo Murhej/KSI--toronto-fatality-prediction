@@ -1,0 +1,75 @@
+.prediction-result-display {
+  width: 55vw;
+  color: rgb(45, 45, 145);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border: 5px solid rgb(223, 223, 223);
+  border-radius: 25px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.prediction-result-display h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.prediction-result-display p {
+  font-size: 50px;
+}
+
+.prediction-values {
+  font-size: 100px;
+  margin-bottom: 35px;
+}
+
+.width-safe {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.tips-link {
+  padding: 14px 28px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.floating-result {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.styled-btn {
+  padding: 14px 28px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.PR-show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100vh;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-radius: 15px;
+  padding: 10px;
+}
