@@ -3,5 +3,6 @@ flask-cors
 pandas
 numpy
 scikit-learn
+imbalanced-learn
 joblib
 python-dotenv
